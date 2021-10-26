@@ -8,7 +8,7 @@ class App extends Component {
         return (
             <StateProvider>
                 <KeyStrokeHandler>
-                    <TodoList/>
+                    <TodoList markerName='todoList'/>
                 </KeyStrokeHandler>
             </StateProvider>
         );

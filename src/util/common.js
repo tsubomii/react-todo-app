@@ -9,7 +9,7 @@ import React from 'react';
  * @return {Object}            New object with only the selected attributes.
  */
 export function objectWithOnly(object, attrs) {
-    let newObject = {};
+    const newObject = {};
 
     attrs.forEach(attr => {
         newObject[attr] = object[attr].bind(object);

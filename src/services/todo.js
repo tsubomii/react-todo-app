@@ -29,7 +29,7 @@ export function getItemById(itemId) {
 }
 
 export function updateStatus(items, itemId, completed) {
-    let index = items.findIndex(item => item.id === itemId);
+    const index = items.findIndex(item => item.id === itemId);
 
     // Returns a new list of data with updated item.
     return update(items, {
@@ -58,7 +58,7 @@ function getNextId() {
  * @return {Array}
  */
 export function addToList(list, data) {
-    let item = Object.assign({
+    const item = Object.assign({
         id: getNextId()
     }, data);
 
