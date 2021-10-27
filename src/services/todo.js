@@ -5,7 +5,7 @@ import update from 'immutability-helper';
  * @return {Array}
  */
 export function getAll() {
-    return [
+    let taskList = [
         {
             id: 1,
             text: 'Learn Javascript',
@@ -21,7 +21,15 @@ export function getAll() {
             text: 'Build a React App',
             completed: false
         }
-    ]
+    ];
+    for (let i = 0; i < 1000; i++) {
+        taskList.push({
+            id: 4 + i,
+            text: `task ${4 + i}`,
+            completed: false
+        });
+    }
+    return taskList;
 }
 
 export function getItemById(itemId) {
