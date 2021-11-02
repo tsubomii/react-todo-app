@@ -11,8 +11,8 @@
     "express": "^4.17.1",
     "immutability-helper": "^2.1.1",
     "keycode-js": "^0.0.4",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
     "recompose": "^0.23.5"
   },
   "scripts": {

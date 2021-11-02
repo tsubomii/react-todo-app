@@ -22,7 +22,7 @@ export function getAll() {
             completed: false
         }
     ];
-    for (let i = 0; i < 1000; i++) {
+    for (let i = 0; i < 42; i++) {
         taskList.push({
             id: 4 + i,
             text: `task ${4 + i}`,
